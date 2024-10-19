@@ -23,6 +23,12 @@ nav {
   height: 40px;
 }
 
+  main p {
+    padding: 150px;
+    padding-top: 0%;
+  }
+
+
 
 button {
   background-color: #f9f9f9;
