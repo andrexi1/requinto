@@ -80,7 +80,7 @@ button {
   height: 600px;
   pointer-events: none;
   transform-style: preserve-3d;
-  transition: translate 1s;
+  transition: translate 2s;
   translate: calc(min(var(--c), 1) * 50%) 0%;
 }
 
@@ -111,7 +111,6 @@ button {
 .front,
 .back h3 {
   margin-bottom: 0;
-
 }
 
 .front,
@@ -152,17 +151,33 @@ button {
   padding-right: 0%;
 }
 
+.back p{
+  text-align: justify;
+}
+
+.back .img_cap img {
+  height: 30px;
+  background-color: transparent;
+}
+
 .img_cap p {
   text-align: justify;
   margin-right: 25px;
   margin-bottom: 25px;
   margin-left: 0;
 }
+.front img{
+  height: 85%;
+  background-color: transparent;
+}
 
-.front1,
-.img2_cap {
-  padding-top: 25px;
+.front .img2_cap{
+  padding-top: 0%;
+  padding-bottom: 2rem;
+}
 
+.front_1 p{
+  padding-left: 2rem;
 }
 
 .front .img2_cap {
@@ -172,16 +187,16 @@ button {
 
 .front_1 .img2_cap img {
   height: 25%;
-  background-color: #fff;
+  background-color:transparent;
   padding-left: 0px;
-}
-.img2_cap p{
-  margin-left: 25px;
+  padding-top: 1.6rem;
 }
 
+
+
 .back .img_cap img {
-  height: 25%;
-  background-color: #fff;
+  height: auto;
+  background-color: transparent;
   margin-right: 0px;
 }
 
@@ -197,6 +212,22 @@ button {
   margin-top: 15%;
   max-width: 100%;
   height: auto;
+}
+
+.img3_cap {
+  height: 350px;
+  background-color: transparent;
+  margin-right: 0px;
+  padding-right: 20px;
+}
+
+.img4_cap{
+  margin-right: 2rem;
+  padding-top: 2rem;
+}
+
+.img4_cap img{
+  height: 150px;
 }
 
 
@@ -228,6 +259,6 @@ button {
   height: auto;
 }
 
-footer{
+footer {
   margin-top: 50px;
 }
