@@ -138,11 +138,27 @@ button {
   padding-left: 0%;
 }
 
+
+
+.front_2 {
+  flex: none;
+  width: 100%;
+  padding: 2rem;
+  padding-left: 2rem;
+  padding-top: 25px;
+  backface-visibility: hidden;
+  background-color: #fff;
+  translate: 0px;
+  text-align: justify;
+  padding-left: 0%;
+}
+
 .back {
   background-image: linear-gradient(to right, #fff 80%, #ddd 100%);
   translate: -100% 0;
   rotate: 0 1 0 180deg;
-  padding-bottom: 0%;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
 }
 
 .back,
@@ -151,8 +167,18 @@ button {
   padding-right: 0%;
 }
 
-.back p{
+.back p {
   text-align: justify;
+}
+
+.images {
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.images img{
+  height: 90%;
+  padding-top: 1.5rem;
 }
 
 .back .img_cap img {
@@ -166,17 +192,39 @@ button {
   margin-bottom: 25px;
   margin-left: 0;
 }
-.front img{
+
+.front img {
+  padding-top: 1rem;
   height: 85%;
   background-color: transparent;
+  padding-bottom: 0%;
 }
 
-.front .img2_cap{
+.front_2 p,
+.front_2 h3 {
+  padding-left: 30px;
+  padding-bottom: 0%;
+  margin-bottom: 1.5rem;
+}
+
+.front_2 p {
+  margin-top: 0%;
+}
+
+
+.front .img2_cap {
   padding-top: 0%;
   padding-bottom: 2rem;
 }
 
-.front_1 p{
+
+.back .img2_cap img {
+  padding-top: 0%;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+.front_1 p {
   padding-left: 2rem;
 }
 
@@ -187,9 +235,14 @@ button {
 
 .front_1 .img2_cap img {
   height: 25%;
-  background-color:transparent;
+  background-color: transparent;
   padding-left: 0px;
   padding-top: 1.6rem;
+}
+
+.back_3 img {
+  width: 350px;
+  height: 460px;
 }
 
 
@@ -221,12 +274,13 @@ button {
   padding-right: 20px;
 }
 
-.img4_cap{
-  margin-right: 2rem;
-  padding-top: 2rem;
+.img4_cap {
+  margin-right: 0.5rem;
+  padding-top: 1rem;
+
 }
 
-.img4_cap img{
+.img4_cap img {
   height: 150px;
 }
 
