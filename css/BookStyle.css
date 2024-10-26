@@ -100,6 +100,7 @@ button {
   translate: calc(var(--i) * -100%) 0px 0px;
   transform: translateZ(calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * 1px)));
   rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
+  position: relative;
 }
 
 .page img {
@@ -108,8 +109,21 @@ button {
   object-fit: cover;
 }
 
-.front,
-.back h3 {
+.back h1, h2, h3 {
+  font-family: 'Ink Free', sans-serif; 
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.front h2, h3 {
+  font-family: 'Ink Free', sans-serif; 
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+p{
+  font-family : 'Garamond';
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -118,12 +132,14 @@ button {
   flex: none;
   width: 100%;
   padding: 2rem;
+  padding-right: 2rem;
   padding-left: 30px;
   padding-top: 25px;
   backface-visibility: hidden;
   background-color: #fff;
   translate: 0px;
   text-align: justify;
+  position: relative;
 }
 
 .front_1 {
@@ -136,6 +152,7 @@ button {
   translate: 0px;
   text-align: justify;
   padding-left: 0%;
+  position: relative;
 }
 
 
@@ -151,6 +168,7 @@ button {
   translate: 0px;
   text-align: justify;
   padding-left: 0%;
+  position: relative;
 }
 
 .back {
@@ -167,6 +185,21 @@ button {
   padding-right: 0%;
 }
 
+.front .img2_cap {
+  padding-top: 0%;
+  padding-bottom: 2rem;
+}
+
+
+.back .img2_cap img {
+  padding-top: 0%;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+.img5_cap{
+  padding-right: 2rem;
+}
 .back p {
   text-align: justify;
 }
@@ -176,7 +209,7 @@ button {
   padding-top: 1rem;
 }
 
-.images img{
+.images img {
   height: 90%;
   padding-top: 1.5rem;
 }
@@ -186,11 +219,74 @@ button {
   background-color: transparent;
 }
 
+.front .img6_cap img{
+  margin-left: 55px;
+  height: 280px;
+  width: 200px;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+
+.img7_cap img{
+  margin-left: 85px;
+  height: 250px;
+  width: 160px;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 1rem;
+}
+
+.img7_cap p{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.img8_cap img{
+  width: 160px;
+  margin-left: 95px;
+  margin-top: 150px;
+}
+
+.img10_cap img{
+  height: 240px;
+  padding-right: 0;
+  padding-top: 2rem;
+}
+
+.img10_cap{
+  padding-top: 7rem;
+}
+
+
+.front_1 .img11_cap{
+  padding-left: 0%;
+  padding-top: 9rem;
+  padding-right: 50px;
+}
+.front_1 .img11_cap img{
+  height: 209px;
+  width: 360px;
+
+}
+
+
+
+.front .img12_cap{
+  padding-top: 400px;
+  padding-bottom: 2rem;
+}
+
+.front .img12_cap img{
+  width: 150px;
+  margin-left: 95px;
+}
 .img_cap p {
   text-align: justify;
   margin-right: 25px;
   margin-bottom: 25px;
   margin-left: 0;
+  background-color: transparent;
 }
 
 .front img {
@@ -209,19 +305,6 @@ button {
 
 .front_2 p {
   margin-top: 0%;
-}
-
-
-.front .img2_cap {
-  padding-top: 0%;
-  padding-bottom: 2rem;
-}
-
-
-.back .img2_cap img {
-  padding-top: 0%;
-  padding-bottom: 2rem;
-  padding-right: 2rem;
 }
 
 .front_1 p {
@@ -275,6 +358,7 @@ button {
 }
 
 .img4_cap {
+  padding-right: 0%;
   margin-right: 2rem;
   padding-top: 1rem;
 
@@ -315,4 +399,88 @@ button {
 
 footer {
   margin-top: 50px;
+}
+.page_number {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #333; 
+  text-align: center;
+  width: 100%; 
+}
+.author{
+  position: absolute;
+  left: 60%;
+  text-align: left;
+}
+.tex_title {
+  font-family: 'Ink Free', sans-serif; 
+  font-size: 36px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.h1_tex h1{
+  font-family: 'Ink Free', sans-serif; 
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.index-list {
+  list-style-type: none;
+  padding: 0;
+  font-family: Garamond; 
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.index-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 5px 0;
+}
+
+.index-list li span:first-child {
+  color: #444; 
+}
+
+.index-list li span:last-child {
+  color: #888; 
+}
+.indice h1{
+  font-family: 'Ink Free', sans-serif; 
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.img_info img{
+  padding-top: 0;
+}
+.img_info img{
+  width: 180px;
+  padding-bottom: 2rem;
+  justify-content: center;
+  margin-left: 88px;
+}
+.author_info p{
+  text-align: center;
+  font-family: Garamond; 
+  font-size: 14px;
+}
+.author_name p{
+  text-align: left;
+  font-family: Garamond; 
+  font-size: 14px;
+}
+.desing_info p{
+  text-align: left;
+  font-family: Garamond; 
+  font-size: 14px;
+}
+.book_info p{
+  text-align: center;
+  font-family: Garamond; 
+  font-size: 14px;
+  padding-top: 4rem;
 }
