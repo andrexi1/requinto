@@ -101,6 +101,7 @@ h1 {
 .gallery-item img {
   height: 100%;
   width: 150px;
+  border: none;
 }
 
 .gallery-item:hover {
@@ -111,9 +112,10 @@ h1 {
 }
 
 .gallery-img {
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 30%;
   object-fit: cover;
+  border: none;
 
 }
 
