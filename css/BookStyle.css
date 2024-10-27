@@ -393,8 +393,8 @@ p{
 
 .img img,
 .min img {
-  max-width: 100%;
-  height: auto;
+  width: 50px;
+  height: 50px;
 }
 
 footer {
@@ -484,3 +484,4 @@ footer {
   font-size: 14px;
   padding-top: 4rem;
 }
+
