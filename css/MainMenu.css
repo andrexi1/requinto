@@ -117,19 +117,25 @@ main p {
   justify-content: flex-end;
 }
 
+footer{
+  height: 100%;
+  margin-bottom: 0%;
+ }
+
+
 .principal {
+  height: 100%;
   display: flex;
-  background-color: brown;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(10, 25, 47);
+  justify-content: left;
   gap: 20px;
 
 }
 
 .img img,
 .min img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 
