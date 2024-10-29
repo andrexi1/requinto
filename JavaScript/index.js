@@ -45,3 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowRight') {
+    if (currentPageIndex < pages.length - 1) {
+      currentPageIndex++;
+      goToPage(currentPageIndex);
+    }
+  } else if (event.key === 'ArrowLeft') {
+    if (currentPageIndex > 0) {
+      currentPageIndex--;
+      goToPage(currentPageIndex);
+    }}});

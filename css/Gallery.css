@@ -1,8 +1,8 @@
-body {
+                                                                                                                                                                            body {
   padding: 0%;
   margin: 0%;
   display: inline;
-  background-color: bisque;
+  background-color: rgba(240, 237, 237, 0.829);;
 }
 
 header {
@@ -25,7 +25,8 @@ nav {
 
 
 button {
-  background-color: #e2eeab;
+  background-color: RGB(173, 216, 230);
+  border-radius: 5%;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
@@ -55,7 +56,8 @@ button:hover{
   border-radius: 10%;
   display: none;
   position: absolute;
-  background-color: #e2eeab;
+  background-color: RGB(173, 216, 230);
+  border-radius: 5%;
   min-width: 160px;
   margin-top: -220px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
