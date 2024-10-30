@@ -1,4 +1,4 @@
-                                                                                 * {
+* {
   box-sizing: border-box;
 }
 
@@ -387,6 +387,7 @@ p{
  footer{
   height: 100%;
   margin-bottom: 0;
+  margin-top: 100px;
  }
 
 
@@ -490,3 +491,18 @@ p{
   padding-top: 4rem;
 }
 
+.button{
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  display: flex;
+  justify-content: center; 
+  margin: 10px 0; 
+  margin-bottom: 50px;
+}
+ .button button{
+  position: relative;
+  margin: -3px 10px;
+  padding: 10px 15px;
+ }

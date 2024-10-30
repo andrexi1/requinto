@@ -1,15 +1,42 @@
 const flipBook = (elBook) => {
   elBook.style.setProperty("--c", 0);
-  elBook.querySelectorAll(".page").forEach((page, idx) => {
+  const pages = elBook.querySelectorAll(".page");
+  const totalPages = pages.length - 1;
+
+  pages.forEach((page, idx) => {
     page.style.setProperty("--i", idx);
     page.addEventListener("click", (evt) => {
       const curr = evt.target.closest(".back") ? idx : idx + 1;
-      elBook.style.setProperty("--c", curr);
+      updatePage(curr);
     });
+  });
+
+  const updatePage = (newPage) => {
+    currentPage = Math.max(0, Math.min(newPage, totalPages));
+    elBook.style.setProperty("--c", currentPage);
+  };
+
+  let currentPage = 0;
+
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    updatePage(currentPage - 1);
+  });
+  
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    updatePage(currentPage + 1);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      updatePage(currentPage - 1);
+    } else if (event.key === "ArrowRight") {
+      updatePage(currentPage + 1);
+    }
   });
 };
 
 document.querySelectorAll(".book").forEach(flipBook);
+
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.querySelector(".dropdown button");
   const dropdown = document.getElementById("dropdown");
@@ -45,14 +72,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'ArrowRight') {
-    if (currentPageIndex < pages.length - 1) {
-      currentPageIndex++;
-      goToPage(currentPageIndex);
-    }
-  } else if (event.key === 'ArrowLeft') {
-    if (currentPageIndex > 0) {
-      currentPageIndex--;
-      goToPage(currentPageIndex);
-    }}});
